@@ -34,5 +34,10 @@ var Jugador = {
       this.y = this.y + movY ;
       this.sprite = 'imagenes/auto_rojo_abajo.png';
     }
+  },
+
+  perderVidas: function (cantVidas){
+    this.vidas = this.vidas - cantVidas;
   }
+
 }
