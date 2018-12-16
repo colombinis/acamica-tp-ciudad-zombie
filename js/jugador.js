@@ -13,4 +13,26 @@ var Jugador = {
   // Hay que agregar lo que falte al jugador: movimientos, perdida de vidas,
   // y todo lo que haga falta para que cumpla con sus responsabilidades
 
+  mover: function (tecla, movX , movY){
+    
+    if (tecla == 'izq') {
+      this.x = this.x + movX ;
+      this.sprite = 'imagenes/auto_rojo_izquierda.png';
+    }
+
+    if (tecla == 'arriba') {
+      this.y = this.y + movY ;
+      this.sprite = 'imagenes/auto_rojo_arriba.png';
+    }
+
+    if (tecla == 'der') {
+      this.x = this.x + movX ;
+      this.sprite = 'imagenes/auto_rojo_derecha.png';
+    }
+
+    if (tecla == 'abajo') {
+      this.y = this.y + movY ;
+      this.sprite = 'imagenes/auto_rojo_abajo.png';
+    }
+  }
 }
