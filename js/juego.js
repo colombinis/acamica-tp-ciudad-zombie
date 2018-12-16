@@ -185,6 +185,9 @@ Juego.dibujar = function() {
     var x = tamanio * i
     Dibujante.dibujarRectangulo('red', x, 0, tamanio, 8);
   }
+
+  //linea llegada
+  Dibujante.dibujarRectangulo('green', 760, 555, 126, 10);
 };
 
 
